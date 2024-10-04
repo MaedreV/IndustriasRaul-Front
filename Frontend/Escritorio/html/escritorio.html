@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escritório - Cadastro e Gestão de Setores e Funcionários</title>
+  <link rel="stylesheet" href="/Frontend/Escritorio/css/styleOffice.css">
+</head>
+
+<body>
+  <h1>Cadastro e Gestão de Setores e Funcionários</h1>
+
+  <div class="container">
+    <section class="card">
+      <h2>Cadastrar Setor</h2>
+      <form id="form-setor">
+        <label for="nomeSetor">Nome do Setor:</label>
+        <input type="text" id="nomeSetor" required>
+        <button type="submit">Cadastrar Setor</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Cadastrar Funcionário</h2>
+      <form id="form-funcionario">
+        <label for="nomeFuncionario">Nome:</label>
+        <input type="text" id="nomeFuncionario" required>
+
+        <label for="emailFuncionario">Email:</label>
+        <input type="email" id="emailFuncionario" required>
+
+        <label for="senhaFuncionario">Senha:</label>
+        <input type="password" id="senhaFuncionario" required>
+
+        <label for="setorFuncionario">Setor:</label>
+        <select id="setorFuncionario" required></select>
+
+        <button type="submit">Cadastrar Funcionário</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Relatórios de Problemas por Setor</h2>
+      <label for="setorRelatorio">Selecione o Setor:</label>
+      <select id="setorRelatorio"></select>
+      <button id="btnRelatorio">Ver Relatórios</button>
+
+      <div id="relatorio"></div>
+    </section>
+  </div>
+
+  <script src="/Frontend/Escritorio/js/escritorio.js"></script>
+</body>
+
+</html>

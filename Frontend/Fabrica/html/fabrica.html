@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fábrica - Reportar Problemas</title>
+  <link rel="stylesheet" href="/Frontend/Fabrica/css/style.css">
+</head>
+
+<body>
+  <h1>Selecione seu nome:</h1>
+  <div id="funcionarios"></div>
+
+  <div id="problemas" style="display:none;">
+    <h2>Selecione o problema:</h2>
+    <button onclick="reportarProblema('Falha em equipamento')">Falha em equipamento</button>
+    <button onclick="reportarProblema('Falta de insumo')">Falta de insumo</button>
+    <button onclick="reportarProblema('Assédio')">Assédio</button>
+    <button onclick="reportarProblema('Falha de pessoal')">Falha de pessoal</button>
+    <button onclick="reportarProblema('Acidente')">Acidente</button>
+  </div>
+
+  <script src="/Frontend/Fabrica/js/fabrica.js"></script>
+</body>
+
+</html>
